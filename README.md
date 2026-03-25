@@ -1,6 +1,6 @@
-# Rolldown Wildcard Export Bug
+# @o7/icon Wildcard Export Bug
 
-**UPDATE:** This affects **both Vite 7 (Rollup) AND Vite 8 (rolldown)**.
+**Affects:** Both Vite 7 (Rollup) AND Vite 8 (rolldown)
 
 ## Reproduction
 
@@ -63,12 +63,12 @@ Or the @o7/icon Vite plugin transforms barrel imports in dev mode, but productio
 
 ```bash
 # Vite 7 test
-cd rolldown-wildcard-vite7-test
+cd o7-icon-wildcard-vite7-test
 pnpm install
 pnpm build  # FAILS
 
 # Vite 8 test  
-cd rolldown-wildcard-vanilla
+cd o7-icon-wildcard-vanilla
 pnpm install
 pnpm build  # FAILS
 ```
@@ -85,5 +85,6 @@ Both Rollup (Vite 7) and rolldown (Vite 8) fail to resolve wildcard export patte
 ## Related
 
 - @o7/icon: https://github.com/ottomated/o7-icon
-- Rolldown: https://github.com/rolldown/rolldown
+- Vite: https://github.com/vitejs/vite
 - Rollup: https://github.com/rollup/rollup
+- Rolldown: https://github.com/rolldown/rolldown
