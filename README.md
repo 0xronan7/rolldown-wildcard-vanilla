@@ -10,15 +10,18 @@ Minimal reproduction of wildcard exports resolution failure in @o7/icon package.
 
 ### Vite 7 (Rollup)
 ```
-[commonjs--resolver] No known conditions for "./lucide/check.svelte" specifier 
-in "@o7/icon" package
+✘ [ERROR] No known conditions for "./lucide/check.svelte" specifier in "@o7/icon" package
 ```
+- ❌ Dev mode: fails
+- ❌ Build: fails
 
 ### Vite 8 (rolldown)
 ```
 "./lucide/check" is not exported under the conditions ["module", "browser", "production", "import"]
 from package @o7/icon (see exports field in package.json)
 ```
+- ❌ Dev mode: fails
+- ❌ Build: fails
 
 ## Root Cause
 
@@ -35,7 +38,7 @@ The `@o7/icon` package uses wildcard exports:
 }
 ```
 
-This pattern is **not resolved correctly by either bundler**.
+This pattern is **not resolved correctly by either bundler, in both dev and build modes**.
 
 ## Test Case
 
