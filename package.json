@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "build": "vite build"
   },
   "devDependencies": {
-    "vite": "^7.3.1"
+    "vite": "^8.0.0"
   },
   "dependencies": {
     "@o7/icon": "^0.3.79"
