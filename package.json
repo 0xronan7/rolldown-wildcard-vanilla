@@ -1,5 +1,5 @@
 {
-  "name": "rolldown-wildcard-vanilla",
+  "name": "o7-icon-wildcard-vanilla",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -7,7 +7,7 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "vite": "^8.0.0-beta.7"
+    "vite": "^7.3.1"
   },
   "dependencies": {
     "@o7/icon": "^0.3.79"
